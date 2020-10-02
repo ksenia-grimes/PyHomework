@@ -1,5 +1,7 @@
 chislo = input ("Введите целое число от 0 до 99: ")
 if chislo.isdigit():
+	if chislo <0 or >99:
+		print ("Пожал, введите число в диапазоне от 0 до 99.")
 	if int(chislo) == 0:
 		print ("Ноль")
 	elif int(chislo) == 1:
