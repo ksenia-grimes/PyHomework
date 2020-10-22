@@ -4,11 +4,7 @@ for i in spisok:
 	if i not in guide:
 		print ('Некорректный ввод. Вводите только целые числа.')
 		exit()
-#ввод без запятых
-for d in spisok:
-	if d != guide[10]:
-		print ('Пожалуйста, вводите числа через запятую.')
-		exit()
+#при вводе без запятых программа не работает
 
 probel = spisok.replace(" ", "")
 numbers = probel.split(',')
