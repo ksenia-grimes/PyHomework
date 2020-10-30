@@ -7,6 +7,7 @@ spisok = input("Пожалуйста, введите любую последов
 probel = spisok.replace(" ", "")
 numbers = probel.split(',')
 
+#проверка ввода
 try:
 	nums = [int(item) for item in numbers]
 except ValueError:
@@ -16,8 +17,8 @@ except ValueError:
 # Решение
 plus = []
 minus = []
-#среднее отрицательных элементов
 
+#среднее отрицательных элементов
 for j in nums:
     if j < 0:
         minus.append(j)
