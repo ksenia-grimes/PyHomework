@@ -1,8 +1,6 @@
 # Вывести все элементы списка, стоящие до максимального элемента этого списка
-# Ввод: X = [3, 0, 7, 0, 0, 3]
-# Вывод: [3, 0]
 
-# Ввод данных
+#ввод данных
 spisok = input('Введите список любых целых чисел: ')
 guide = ['1','2','3','4','5','6','7','8','9','0',',',' ']
 for i in spisok:
@@ -13,9 +11,10 @@ for i in spisok:
 #блок удаления пробелов и деления на список
 probel = spisok.replace(" ", "")
 numbers = probel.split(',')
+nums = [int(item) for item in numbers]
 
 # блок решения
-maximum = max(numbers, key=int)
-lugar = numbers.index(maximum)
+maximum = max(nums)
+lugar = nums.index(maximum)
 
-print(numbers[:lugar])
+print(nums[:lugar])
