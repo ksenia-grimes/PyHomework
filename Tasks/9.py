@@ -13,24 +13,24 @@ probel = spisok.replace(" ", "")
 numbers = probel.split(',')
 
 #проверка трех элементов
-a1 = input ('Введите искомое число: ')
+a1 = input ('Введите число: ')
 for p in a1:
 	if p not in guide:
-		print ('Некорректный ввод искомого числа.')
+		print ('Некорректный ввод числа.')
 		exit()
 a11=a1.replace(' ','')
 
-a2 = input ('Введите искомое число: ')
+a2 = input ('Введите число: ')
 for p in a2:
 	if p not in guide:
-		print ('Некорректный ввод искомого числа.')
+		print ('Некорректный ввод числа.')
 		exit()
 a22 = a2.replace(' ','')
 
-a3 = input ('Введите искомое число: ')
+a3 = input ('Введите число: ')
 for p in a3:
 	if p not in guide:
-		print ('Некорректный ввод искомого числа.')
+		print ('Некорректный ввод числа.')
 		exit()
 a33 = a3.replace (' ','')
 
