@@ -10,4 +10,4 @@ for i in sort:
     else:
         my_dict[i] = 1 #если ключа нет, добавляется и присваивается значение 1
 for i in my_dict:
-	  print (i, '=', my_dict[i])
+	print (i, '=', my_dict[i])
