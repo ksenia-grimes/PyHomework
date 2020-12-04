@@ -7,7 +7,7 @@ def Task(functions,input_list):
         final_results.append(functions[1](y))
     return max(final_results)
 def F1(x):
-    return x*2 #содержит в себе результат F1
+    return x*2
 def F2(x):
     return x*3
 
