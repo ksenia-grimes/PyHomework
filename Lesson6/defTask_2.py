@@ -1,6 +1,6 @@
 def Task(functions,input_list):
     copylist = input_list.copy()
-    for f in functions:
+    for f in functions: #input_list = map(f, input_list)
         for x in range(len(copylist)):
             copylist[x] = f(copylist[x])
     return max(copylist) 
