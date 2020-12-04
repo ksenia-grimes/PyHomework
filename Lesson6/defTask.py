@@ -2,7 +2,7 @@ input_list = [1,2,3]
 def Task(x):
     def F1(x):
         return x*2
-    y = F1(x)
+    y = F1(x) #содержит в себе результат F1
     def F2(y):
         return y*3
     return F2(y)
