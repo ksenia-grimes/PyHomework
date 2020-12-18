@@ -17,4 +17,5 @@ context = {'universityname':str(input('Введите полное назван�
           'city':str(input('Введите ваш город: ').strip())}
 doc.render(context)
 doc.save("example-final.docx")
+#или doc.save('example.docx')-заменит существующий шаблон
 print ('Смотрите файл "example-final.docx" в той же папке, где запускали код :)')
