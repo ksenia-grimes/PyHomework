@@ -61,4 +61,5 @@ doc.render(context)
 
 #сохраняем файл
 doc.save("example-final.docx")
+#или doc.save('example.docx')-заменит существующий шаблон
 print ('Смотрите файл "examaple-final.docx" в той же папке, где запускали код :)')
