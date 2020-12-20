@@ -13,10 +13,12 @@ while not re.match('^[A-Za-zА-Яа-яЁё\\s\'"().-]*$',universityname):
     print ('Проверьте правильность ввода данных.')
     universityname = str(input('Введите полное название вашего ВУЗа: ').strip())
 facultyname = str(input('Введите полное название факультета: ').strip())
-while not re.match('^[A-Za-zА-Яа-яЁё\\s\'".-]*$',facultyname):
+while not re.match('^[A-Za-zА-Яа-яЁё\\s\'"().-]*$',facultyname):
+    print('Проверьте правильность ввода данных.')
     facultyname = str(input('Введите полное название факультета: ').strip())
 cathedralname=str(input('Введите полное название кафедры: ').strip())
-while not re.match('^[A-Za-zА-Яа-яЁё\\s\'".-]*$',cathedralname):
+while not re.match('^[A-Za-zА-Яа-яЁё\\s\'"().-]*$',cathedralname):
+    print('Проверьте правильность ввода данных')
     cathedralname=str(input('Введите полное название кафедры: ').strip())
 profname=str(input('Введите инициалы и фамилию руководителя ООП, например И.И. Иванов: ').strip())
 while not re.match('^[A-Za-zА-Яа-яёЁ\\s.-]*$', profname):
@@ -24,8 +26,8 @@ while not re.match('^[A-Za-zА-Яа-яёЁ\\s.-]*$', profname):
     profname=str(input('Введите инициалы и фамилию руководителя ООП, например И.И. Иванов: ').strip())
 achievements=str(input('Введите должность/звание руководителя ООП (кратко): ').strip())
 year = str(input('Введите год написания и защиты работы: ').strip())
-while year.isdigit() == False: #проверка года
-    print ('Извините, год введен неверно')
+while year.isdigit() == False:
+    print ('Пожалуйста, вводите только цифры. ')
     year = str(input('Введите год написания и защиты работы: ').strip())
 nameofthesis=str(input('Введите полное название вашей работы без кавычек: ').strip().upper())
 numberofcourse=str(input('Введите номер направления ООП: ').strip())
