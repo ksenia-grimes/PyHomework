@@ -9,7 +9,7 @@ doc = DocxTemplate('example.docx')
 
 #блок вводных данных и их проверки
 universityname = str(input('Введите полное название вашего ВУЗа: ').strip())
-while not re.match('^[A-Za-zА-Яа-яЁё\\s\'"().-]*$',universityname):
+while not re.match('^[A-Za-zА-Яа-яЁё\\s\'"()\/\\\.-]*$',universityname):
     print ('Проверьте правильность ввода данных.')
     universityname = str(input('Введите полное название вашего ВУЗа: ').strip())
 facultyname = str(input('Введите полное название факультета: ').strip())
